@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+
+<!-- Following Menu -->
+<div class="ui large top fixed menu" th:fragment="header">
+    <div class="ui container">
+        <a  href="Index" class="header item">
+              <img class="logo"
+              th:src="@{/images/logo-dolce.jpg}" />
+        </a>
+
+        <a class="item">Inicio</a>
+        <a class="item">Recetarios</a>
+        <a class="item">Recetas</a>
+        <!-- @await Html.PartialAsync("_LoginPartial", new { signup = "primary" }) -->
+    </div>
+</div>
+
+<!-- Sidebar Menu -->
+<!--
+<div class="ui vertical inverted sidebar menu">
+    <a class="active item">Home</a>
+    <a class="item">Cookbooks</a>
+    <a class="item">Recipes</a>
+    <a class="item">Login</a>
+    <a class="item">Signup</a>
+</div>
+-->
+</body>
+</html>
