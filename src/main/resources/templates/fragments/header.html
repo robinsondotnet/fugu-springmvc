@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html 
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title></title>
+</head>
+<body th:fragment="header">
+
+<!-- Following Menu -->
+<div class="ui large top fixed menu hidden" >
+    <div class="ui container">
+        <a  href="Index" class="header item">
+              <img class="logo"
+              th:src="@{/images/logo-dolce.jpg}" />
+        </a>
+
+        <a class="item">Inicio</a>
+        <a class="item">Recetarios</a>
+        <a class="item">Recetas</a>
+        <!-- @await Html.PartialAsync("_LoginPartial", new { signup = "primary" }) -->
+    </div>
+</div>
+
+<!-- Sidebar Menu -->
+
+<div class="ui vertical inverted sidebar menu">
+    <a class="active item">Home</a>
+    <a class="item">Cookbooks</a>
+    <a class="item">Recipes</a>
+    <a class="item">Login</a>
+    <a class="item">Signup</a>
+</div>
+
+</body>
+</html>
