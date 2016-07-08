@@ -43,6 +43,36 @@
                 </div>
             </div>
             <div class="row">
+
+                <table class="ui celled padded table">
+                    <thead>
+                    <tr><th class="single line">Title</th>
+                        <th>Effect</th>
+                        <th>Efficacy</th>
+                        <th>Consensus</th>
+                    </tr></thead>
+                    <tbody>
+                    <tr  th:each="receta : ${results}">
+                        <td>
+                            <h2 th:text="${receta.getTitle()}" class="ui center aligned header">A</h2>
+                        </td>
+                        <td class="single line">
+                            Power Output
+                        </td>
+                        <td>
+                            <div class="ui star rating" data-rating="3" data-max-rating="3"></div>
+                        </td>
+                        <td class="right aligned">
+                            80%
+                            <br />
+                            <a>16 studies</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="row">
                 <div class="center aligned column">
                     <a class="ui huge button">Check Them Out</a>
                 </div>

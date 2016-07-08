@@ -28,4 +28,8 @@
         .sidebar('attach events', '.toc.item')
       ;
 
+
+        $('.rating')
+            .rating('enable')
+        ;
     });
